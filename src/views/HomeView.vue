@@ -1,12 +1,9 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue';
-import {ref} from 'vue';
 
-let message = ref('hello world!');
+import {useFlash} from "@/composables/useFlash.js";
 
-setTimeout(() => {
-  message.value = "I have been changed";
-}, 2000);
+let { flash } = useFlash();
+
 
 </script>
 
@@ -14,10 +11,8 @@ setTimeout(() => {
 
 <template>
   <main>
-    <TheWelcome/>
-    <p>{{ message }}</p>
     <p>
-      <input type="text" v-model="message"/>
+      <button @click="flash('Yay ! ','It works', 'info')">Click me</button>
     </p>
   </main>
 </template>
