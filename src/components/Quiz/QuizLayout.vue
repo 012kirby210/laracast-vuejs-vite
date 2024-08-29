@@ -3,14 +3,11 @@
   import QuizFooter from "@/components/Quiz/QuizFooter.vue";
   import QuizQuestion from "@/components/Quiz/QuizQuestion.vue";
 
-  import {provide} from "vue";
-  let props = defineProps({quiz: Object});
-
-  provide('quiz', props.quiz);
-
+  import {state} from "@/Stores/quizStore.js";
 </script>
 
 <template>
+  <h1>{{state.name}}</h1>
   <QuizHeader />
   <QuizQuestion />
   <QuizFooter/>
