@@ -3,15 +3,21 @@
   import QuizFooter from "@/components/Quiz/QuizFooter.vue";
   import QuizQuestion from "@/components/Quiz/QuizQuestion.vue";
 
-  import {provide} from "vue";
+  import {provide, ref} from "vue";
 
   defineProps({quiz: Object});
 
-  provide('key','oui');
+  let name = ref('john Doe');
+
+  provide('name',{
+    name,
+    changeName: () => name.value = 'Changed'
+  });
 
 </script>
 
 <template>
+  <h1>{{name}}</h1>
   <QuizHeader />
   <QuizQuestion />
   <QuizFooter :quiz="quiz"/>
