@@ -11,4 +11,3 @@ export default {
     <button @click="flash('It works')">Click me</button>
   </div>
 </template>
-
