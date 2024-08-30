@@ -1,12 +1,14 @@
 <script setup>
-
+  import {counter} from '@/Stores/counterStore.js';
 </script>
 
 <template>
   <div>
     <p>
-      Counter View
+      {{ counter.count }}
     </p>
+    <button @click="counter.increment">Increment</button>
+
   </div>
 </template>
 
