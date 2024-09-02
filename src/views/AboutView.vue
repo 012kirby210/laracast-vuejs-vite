@@ -1,6 +1,8 @@
 <script setup>
 // import flash from '@/mixins/flash';
-import {counter} from '@/Stores/counterStore.js'
+import {useCounterStore} from '@/Stores/CounterStore.js'
+
+let counter = useCounterStore();
 
 // export default {
 //   mixins: [flash]
