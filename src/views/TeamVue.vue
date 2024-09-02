@@ -1,5 +1,5 @@
 <script setup>
-
+import TeamMember from "@/components/Teams/TeamMember.vue";
 </script>
 
 <template>
@@ -32,70 +32,12 @@
       <th class="text-left-px-6 py-2">Status</th>
       </thead>
       <tbody>
-      <tr class="px-12">
-        <td class="text-xl font-medium flex items-center gap-x-4 px-6 py-4">
-          <img src="https://i.pravatar.cc/50?u=james@doe.com" alt="" class="rounded-xl">
-          James Doe
-        </td>
-        <td class="text-gray-500 px-6 py-4">James Doe</td>
-        <td class="px-6 py-4">
-          <button class="text-green-400 text-xl">
-            Active
-          </button>
-        </td>
-      </tr>
 
-      <tr class="px-12">
-        <td class="text-xl font-medium flex items-center gap-x-4 px-6 py-4">
-          <img src="https://i.pravatar.cc/50?u=sarah@doe.com" alt="" class="rounded-xl">
-          James Doe
-        </td>
-        <td class="text-gray-500 px-6 py-4">Sarah Doe</td>
-        <td class="px-6 py-4">
-          <button class="text-green-400 text-xl">
-            Active
-          </button>
-        </td>
-      </tr>
-
-      <tr class="px-12">
-        <td class="text-xl font-medium flex items-center gap-x-4 px-6 py-4">
-          <img src="https://i.pravatar.cc/50?u=steven@doe.com" alt="" class="rounded-xl">
-          James Doe
-        </td>
-        <td class="text-gray-500 px-6 py-4">Steven Doe</td>
-        <td class="px-6 py-4">
-          <button class="text-green-400 text-xl">
-            Active
-          </button>
-        </td>
-      </tr>
-
-      <tr class=" px-12">
-        <td class="text-xl font-medium flex items-center gap-x-4 px-6 py-4">
-          <img src="https://i.pravatar.cc/50?u=jen@doe.com" alt="" class="rounded-xl">
-          James Doe
-        </td>
-        <td class="text-gray-500 px-6 py-4">Jen Doe</td>
-        <td class="px-6 py-4">
-          <button class="text-green-400 text-xl">
-            Active
-          </button>
-        </td>
-      </tr>
-
-      <tr class=" px-12">
-        <td class="text-xl font-medium flex items-center gap-x-4 px-6 py-4">
-          <img src="https://i.pravatar.cc/50?u=john@doe.com" alt="" class="rounded-xl">
-          James Doe
-        </td>
-        <td class="text-gray-500 px-6 py-4">John Doe</td>
-        <td class="px-6 py-4">
-          <button class="text-green-400 text-xl">
-            Active
-          </button>
-        </td>
-      </tr>
+      <TeamMember first-name="James" last-name="Doe" email="james@doe.com" status="Active"/>
+      <TeamMember first-name="Sarah" last-name="Doe" email="sarah@doe.com" status="Active"/>
+      <TeamMember first-name="Steven" last-name="Doe" email="steven@doe.com" status="Active"/>
+      <TeamMember first-name="Jen" last-name="Doe" email="jen@doe.com" status="Active"/>
+      <TeamMember first-name="John" last-name="Doe" email="john@doe.com" status="Active"/>
 
       </tbody>
     </table>
