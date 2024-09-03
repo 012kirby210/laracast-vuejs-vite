@@ -1,0 +1,36 @@
+{
+  "name": "Smiley",
+  "spots": 5,
+  "members": [
+    {
+      "firstName": "James",
+      "lastName": "Doe",
+      "email": "james@doe.com",
+      "status": "Active"
+    },
+    {
+      "firstName": "Sarah",
+      "lastName": "Doe",
+      "email": "sarah@doe.com",
+      "status": "Active"
+    },
+    {
+      "firstName": "Steven",
+      "lastName": "Doe",
+      "email": "steven@doe.com",
+      "status": "Active"
+    },
+    {
+      "firstName": "Jen",
+      "lastName": "Doe",
+      "email": "jen@doe.com",
+      "status": "Active"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@doe.com",
+      "status": "Active"
+    }
+  ]
+}
