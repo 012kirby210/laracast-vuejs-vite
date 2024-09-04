@@ -1,14 +1,15 @@
 <script setup>
-  import team from "@/team.json";
+  import {useTeamStore} from "@/Stores/TeamStore.js";
+  let team = useTeamStore();
 </script>
 
 <template>
   <header class="flex justify-between">
     <div>
       <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded disabled:bg-gray-400"
-              :disabled="team.members.length === team.spots"
+              :disabled="! team.spotsRemaining"
       >
-        Add member ({{ team.spots - team.members.length}} spots left)
+        Add member ({{ team.spotsRemaining }} spots left)
       </button>
     </div>
 
