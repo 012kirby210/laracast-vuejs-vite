@@ -6,12 +6,7 @@
 
 <template>
   <Transition
-    enter-from-class="opacity-0 scale-125"
-    enter-to-class="opacity-100 scale-100"
-    enter-active-class="transition duration-300"
-    leave-active-class="transition duration-150"
-    leave-from-class="opacity-100 scale-100"
-    leave-to-class="opacity-0 scale-125"
+    name="modal"
   >
     <div class="modal-mask" v-if="show">
       <div class="modal-container">
@@ -62,5 +57,21 @@ footer button:hover{
 }
 .modal-container header + div {
   padding-bottom: 1rem;
+}
+.modal-enter-active{
+  transition: opacity, scale;
+  transition-duration: 300ms;
+}
+.modal-leave-active{
+  transition: opacity, scale;
+  transition-duration: 150ms;
+}
+.modal-enter-from, .modal-leave-to{
+   opacity: 0;
+   scale:125%;
+ }
+.modal-enter-to, .modal-leave-from{
+  opacity: 100;
+  scale:100%;
 }
 </style>
